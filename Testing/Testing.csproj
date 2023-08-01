@@ -2,8 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <UserSecretsId>afe39988-25bc-4a0f-880b-134c0df550f5</UserSecretsId>
   </PropertyGroup>
 
 
 
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.143" />
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Product\" />
+  </ItemGroup>
 </Project>
